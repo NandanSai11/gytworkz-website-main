@@ -1,0 +1,220 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 6rem;  */
+  /* min-height: 100vh; */
+  /* border: 1px solid red; */
+  /* background-color: beige; */
+  /* overflow-y: scroll; */
+  /* scroll-snap-type: y mandatory; */
+}
+
+.landingSection{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  min-height: 60vh;
+  width: 100%;
+  font-family: 'Roboto Slab', serif;
+  padding-top: calc(15vh + 70px);
+  padding-left: 150px;
+  padding-right: 150px;
+  /* padding-right: 50px; */
+  
+  /* scroll-snap-align: start; */
+}
+
+.landingSection .landingHeading {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.landingSection .landingText {
+  font-size: 1.5rem;
+  /* border: 1px solid red; */
+  line-height: 2.2rem;
+  padding-right: 330px;
+  margin-top: 30px;
+}
+
+.videoSection{
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  min-height: 100vh;
+  width: 100%;
+  /* background-image: url('https://images.unsplash.com/photo-1679063074645-320bcdbdd0c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2007&q=80'); */
+  /* border: 1px solid red; */
+  /* scroll-snap-align: start; */
+  /* color: #fff; */
+  padding: 0 50px;
+}
+
+.bannerSection{
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  min-height: 140vh;
+  /* backdrop-filter: blur(50%); */
+  width: 100%;
+  background-image: url('https://uploads-ssl.webflow.com/6304c680f7471f6edb496e2c/6304dac54d3c3e355ea7f3cf_fiven_shape.svg');
+  background-repeat: no-repeat;
+  background-color: #000;
+  backdrop-filter: brightness(20%);
+  margin-top: 80px;
+
+  /* scroll-snap-align: start; */
+  color: #fff;
+
+  font-family: 'Roboto Slab', serif;
+  padding-top: 120px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.bannerSection .bannerHeading{
+  font-size: 4rem;
+  font-weight: 600;
+  flex: 1;
+}
+
+.bannerSection .bannerMain{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.partnersSection{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  min-height: 100vh;
+  width: 100%;
+  padding: 120px 150px;
+  background-color: blue;
+
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+}
+
+.partnersSection .partnersHeader{
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* border: 1px solid #fff; */
+  /* padding-right: 10px; */
+}
+
+.partnersSection .partnersHeader h1{
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.partnersSection .partnersHeader h6{
+  margin-left: auto;
+  font-size: 1.2rem;
+  margin-right: 50px;
+}
+
+.partnersSection .partnersMain{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* border: 1px solid #fff; */
+  margin-top: 3rem;
+  padding: 0 4rem;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 480px) {
+
+  /* Partners */
+
+  .partnersSection{
+    padding: 1rem;
+  }
+
+  .partnersSection .partnersHeader{
+    flex-direction: column;
+    /* border: 1px solid #fff; */
+    align-items: flex-start;
+  }
+
+  .partnersSection .partnersHeader h1{
+    font-size: 2.2rem;
+  }
+
+  .partnersSection .partnersHeader h6{
+    font-size: 1.2rem;
+    margin: 2rem 0 0 0;
+  }
+
+  .partnersSection .partnersMain{
+    /* border: 1px solid #fff; */
+    padding: 0;
+    justify-content: center;
+  }
+
+  .partnersSection .partnersMain img{
+    /* border: 1px solid #fff; */
+    margin: 0;
+  }
+
+  /* Banner */
+
+
+  .bannerSection{
+    background-image: none;
+    margin-top: 0px;
+    flex-direction: column;
+    min-height: 100vh;
+  
+    font-family: 'Roboto Slab', serif;
+    padding: 1rem;
+  }
+  
+  .bannerSection .bannerHeading{
+    font-size: 2.2rem;
+    font-weight: 600;
+    flex: 0;
+  }
+  
+  .bannerSection .bannerMain{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    /* border: 1px solid #fff; */
+    flex: 0;
+  }
+
+  .videoSection{
+    min-height: fit-content;
+    height: 15rem;
+    width: 100%;
+    padding: 0;
+    margin: 1rem 0 4rem 0;
+  }
+
+  .landingSection{
+    min-height: 0vh;
+    padding: 1rem;
+    padding-top: calc(10vh + 1rem);
+    /* border: 1px solid red; */
+  }
+  
+  .landingSection .landingHeading {
+    font-size: 2.2rem;
+  }
+  
+  .landingSection .landingText {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    padding-right: 0px;
+  }
+
+}

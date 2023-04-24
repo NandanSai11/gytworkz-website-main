@@ -1,0 +1,163 @@
+.longFooter{
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
+  padding: 70px;
+  padding-bottom: 20px;
+  min-height: 60vh;
+  width: 100%;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.longFooter .upperSection{
+  /* border: 1px solid white; */
+  padding: 10px 0;
+}
+
+.longFooter .upperSection img{
+  height: 50px;
+}
+
+.longFooter .lowerSection{
+  /* border: 1px solid white; */
+  margin-top: 30px;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.longFooter .lowerSection .services{
+  /* border: 1px solid white; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.longFooter .lowerSection .services h5{
+}
+
+.longFooter .lowerSection .services .servicesMain{
+  list-style: none;
+  font-size: 0.8rem;
+}
+
+.longFooter .lowerSection .services .servicesMain li{
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.longFooter .lowerSection .company{
+  /* border: 1px solid white; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.longFooter .lowerSection .company h5{
+  
+}
+
+.longFooter .lowerSection .company .companyMain{
+  list-style: none;
+  font-size: 0.8rem;
+}
+
+.longFooter .lowerSection .company .companyMain li{
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.longFooter .lowerSection .policy{
+  /* border: 1px solid white; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.longFooter .lowerSection .policy h5{
+
+}
+
+.longFooter .lowerSection .policy .policyMain{
+  list-style: none;
+  font-size: 0.8rem;
+}
+
+.longFooter .lowerSection .policy .policyMain li{
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.copyrightSection{
+  /* border: 1px solid #fff; */
+  background-color: #191919;
+  /* margin-top: 50px; */
+  padding: 0 70px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyrightSection h6{
+
+}
+
+.copyrightSection .copyrightMain{
+  /* border: 1px solid #fff; */
+  display: flex;
+}
+
+.copyrightSection .copyrightMain img{
+  height: 40px;
+  /* border: 1px solid #fff; */
+  width: fit-content;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .longFooter {
+    /* background-color: lightgreen; */
+    padding: 1rem;
+  }
+
+  .longFooter .lowerSection{
+    flex-direction: column;
+  }
+
+  .longFooter .lowerSection .services{
+    margin-bottom: 3rem;
+  }
+
+  .longFooter .lowerSection .company{
+    margin-bottom: 3rem;
+  }
+
+  .longFooter .lowerSection .policy{
+    margin-bottom: 3rem;
+  }
+
+  .copyrightSection{
+    padding: 0 10px;
+  }
+
+  .copyrightSection h6{
+    font-size: 0.6rem;
+  }
+
+  .copyrightSection .copyrightMain img{
+    height: 35px;
+  }
+
+
+  
+}
